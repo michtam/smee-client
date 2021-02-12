@@ -11,4 +11,4 @@ if [ -z "${WEBHOOK_URL}" ]; then
   exit 1
 fi
 
-exec "smee -u ${WEBHOOK_URL} -t ${TARGET_PATH}"
+smee -u ${WEBHOOK_URL} -t ${TARGET_PATH}
